@@ -6,4 +6,4 @@ services:
 before_install:
  - composer update 
 script:
-  - docker run -v ${pwd}:/app --rm phpunit/phpunit /app
+ - docker run -v ${pwd}:/app --rm phpunit/phpunit /app
