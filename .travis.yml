@@ -6,4 +6,4 @@ services:
 before_install:
  - docker run -v "$PWD/":/app --rm composer install
 script:
- - docker run -v "$PWD/":/app --rm phpunit/phpunit -c /app/phpunit.xml
+ - docker run -v "$PWD/":/app --rm jitesoft/phpunit -c /app/phpunit.xml
