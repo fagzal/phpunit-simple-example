@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branch:
+      - '*'
+jobs:
+  test:
+    runs-on: self-hosted
+    container: phpunit
+      image: phpunit
+    steps:
+      - name: step
+        run: |
+          echo 1
